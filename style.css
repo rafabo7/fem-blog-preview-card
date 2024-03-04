@@ -20,7 +20,11 @@ body {
     margin: auto auto;
     width: 340px;
     height: 60%;
-    
+    background-color: var(--white);
+    padding: 1.2rem;
+    border: 2px solid var(--black);
+    border-radius: 1.5rem;
+    box-shadow: 0.6rem 0.6rem var(--black);
 }
 
 

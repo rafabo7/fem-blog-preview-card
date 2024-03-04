@@ -1,0 +1,27 @@
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+
+}
+
+body {
+    display: flex;
+    background-color: var(--yellow);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#card {
+    margin: auto auto;
+    width: 30%
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

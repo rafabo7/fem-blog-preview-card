@@ -3,25 +3,34 @@
     --white: hsl(0, 0%, 100%);
     --grey: hsl(0, 0%, 50%);
     --black: hsl(0, 0%, 7%);
+    --attribution-height: 12px;
 
 }
 
 body {
     display: flex;
     background-color: var(--yellow);
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    height: calc(100vh - var(--attribution-height));
+    overflow: hidden;
 }
 
 #card {
     margin: auto auto;
-    width: 30%
+    width: 340px;
+    height: 60%;
+    
 }
 
 
 
 
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed;
+    bottom: 0;
+}
 .attribution a { color: hsl(228, 45%, 44%); }

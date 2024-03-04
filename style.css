@@ -17,12 +17,13 @@ body {
     align-items: center;
     height: calc(100vh - var(--attribution-height));
     overflow: hidden;
+    font-size: 16px;
 }
 
 #card {
     margin: auto auto;
     width: 340px;
-    height: 60%;
+    height: fit-content;    
     background-color: var(--white);
     padding: 1.2rem;
     border: 2px solid var(--black);
@@ -34,12 +35,51 @@ svg{
     border-radius: 1.5rem;
 }
 
+#tag{
+    display: block;
+    box-sizing: content-box;
+    font-weight: bold;
+    background-color: var(--yellow);
+    margin: 1.2rem 0;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.4rem;
+    width: fit-content;
+}
 
+main {
+    margin: 2rem 0;
+}
+main > p {
+    color: var(--grey);
+}
+main > h1:hover{
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer > img {
+    height: 3rem;
+}
+footer > p{
+    font-size: 1rem;
+    font-weight: bold;
+}
 
 
 
 .attribution { 
-    font-size: 11px; 
+    height: 2vh;
+    font-size: 1rem; 
+    margin: 1rem 0;
     text-align: center; 
     position: fixed;
     bottom: 0;

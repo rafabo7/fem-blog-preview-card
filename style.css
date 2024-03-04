@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Quicksand:wght@300;500;700&display=swap');
+
 :root{
     --yellow: hsl(47, 88%, 63%);
     --white: hsl(0, 0%, 100%);
@@ -8,6 +10,7 @@
 }
 
 body {
+    font-family: 'Figtree';
     display: flex;
     background-color: var(--yellow);
     justify-content: center;
@@ -25,6 +28,10 @@ body {
     border: 2px solid var(--black);
     border-radius: 1.5rem;
     box-shadow: 0.6rem 0.6rem var(--black);
+}
+
+svg{
+    border-radius: 1.5rem;
 }
 
 

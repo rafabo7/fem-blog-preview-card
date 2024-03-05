@@ -5,11 +5,12 @@
     --white: hsl(0, 0%, 100%);
     --grey: hsl(0, 0%, 50%);
     --black: hsl(0, 0%, 7%);
-    --attribution-height: 12px;
+    --attribution-height: 3rem;
 
 }
 
 body {
+    margin: 0;
     font-family: 'Figtree';
     display: flex;
     background-color: var(--yellow);
@@ -21,18 +22,23 @@ body {
 }
 
 #card {
-    margin: auto auto;
-    width: 340px;
-    height: fit-content;    
+    box-sizing: border-box;
+    width: min(340px, 90vw);
+    height: min(fit-content, calc(100vh - var(--attribution-height)));    
     background-color: var(--white);
     padding: 1.2rem;
     border: 2px solid var(--black);
     border-radius: 1.5rem;
     box-shadow: 0.6rem 0.6rem var(--black);
+    margin: 1rem 1rem;
 }
 
+
 svg{
-    border-radius: 1.5rem;
+    border-radius: 16px;
+    height: 100%;
+    width: 100%;
+
 }
 
 #tag{
@@ -47,7 +53,8 @@ svg{
 }
 
 main {
-    margin: 2rem 0;
+    margin: 1rem 0;
+    flex-shrink: 1;
 }
 main > p {
     color: var(--grey);
@@ -60,10 +67,10 @@ main > h1:hover{
 footer {
     display: flex;
     flex-direction: row;
-    align-content: stretch;
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
+
 }
 
 footer > img {
@@ -77,9 +84,8 @@ footer > p{
 
 
 .attribution { 
-    height: 2vh;
+    height: var(--attribution-height);
     font-size: 1rem; 
-    margin: 1rem 0;
     text-align: center; 
     position: fixed;
     bottom: 0;
